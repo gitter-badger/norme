@@ -1,4 +1,6 @@
 # norme [![NPM version](https://img.shields.io/npm/v/norme.svg?style=flat-square&label=npm)](https://www.npmjs.com/package/norme)[![Linux/OSX build status](https://img.shields.io/travis/aymericbeaumet/norme/master.svg?style=flat-square&label=linux/osx)](https://travis-ci.org/aymericbeaumet/norme)[![Windows build status](https://img.shields.io/appveyor/ci/aymericbeaumet/norme/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/aymericbeaumet/norme)[![Code coverage](https://img.shields.io/codeclimate/coverage/github/aymericbeaumet/norme.svg?style=flat-square&label=coverage)](https://codeclimate.com/github/aymericbeaumet/norme)
+
+[![Join the chat at https://gitter.im/aymericbeaumet/norme](https://badges.gitter.im/aymericbeaumet/norme.svg)](https://gitter.im/aymericbeaumet/norme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 > An opinionated JavaScript linter.
 
 ## Install
