@@ -1,0 +1,33 @@
+environment:
+  matrix:
+    - node_js: 6
+    - node_js: 4
+    - node_js: 0.12
+    - node_js: 0.10
+
+install:
+  - npm install
+
+test_script:
+  - node --version && npm --version
+  - npm test
+
+###
+
+build: off
+
+cache:
+  - node_modules -> npm-shrinkwrap.json
+
+clone_depth: 1
+
+init:
+  - git config --global core.autocrlf input
+  - ps: Install-Product node $env:node_js
+
+matrix:
+  fast_finish: true
+
+shallow_clone: true
+
+version: '#{build}'

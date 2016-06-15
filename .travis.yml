@@ -1,0 +1,41 @@
+language: node_js
+node_js:
+  - 6
+  - 4
+  - 0.12
+  - 0.10
+
+install:
+  - npm install
+
+script:
+  - node --version && npm --version
+  - npm test
+
+after_success:
+  - if [ "$TRAVIS_OS_NAME" = 'linux' ] && [ "$TRAVIS_NODE_VERSION" = '6' ]; then
+      npm run codeclimate;
+    fi
+
+###
+
+addons:
+  code_climate:
+    repo_token:
+      secure: sentHt3g6V7B876LjGpM3JbhJJOEXHkfvYS1X7gVs+2rDhcF/qpRfOowpaRe0cx+eCw4Roxu9uR97gUVlrb3ikUbMg2hy9slj3tckyouds4nvcAKT2vzmE7YABheT2EfxVrq/GfuwrKGAg4VqxvZWvbPC8dypHPFzjzPTfZ/9G/MSDQv6GBNxovqECTc5U/8G6mxZiR73BnSPBfCf9qbY9dY5oEH1WAxIiLtPRWYCUJzAKKbAliNvjc2zGBuhO8mXDGn2Lqt9Kynrs/E2EYtZhpYiB4fSb66j9by0qJ9rFMgVzl8nEVDTS6GCXwWPSPJZ7DhKhk5tGQ/rwBB1sWFICc1BRJCNonfmh2fIdyOhaaQyq0ziDQmOcKhroCYw5tcHiJor1RGrGV3Yb8+aqQBAt3mftKe2t/wAtkgtFjagK/Y/288YMd423eqDH1DEeHp4J87KHX3+VFzoWQoa19fdU5DDoBFE65kNJCrlUyzWVUnTx46cxrersk/Z7CrdEqVV43XgQmZQmFxzow2LUpI9gFq+aqj+Qp9j0IN+sDYL06K2WwoDRM48x6ybdaEzFW/gY9Jg3qxNKuryhBOtuTeSo+NUbBW5FBg1P8MRyz7rVfpnHKzlHtFMvYSPxPSD5SOGBUCMaL8jW5m7MdlAiH5z0OvdH0Jz49zoWjd4WOkhAE=
+
+cache:
+  directories:
+    - node_modules
+
+git:
+  depth: 1
+
+matrix:
+  fast_finish: true
+
+os:
+  - linux
+  - osx
+
+sudo: false

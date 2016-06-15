@@ -1,0 +1,2 @@
+const ko = }{
+ko.shouldFail = true
