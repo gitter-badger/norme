@@ -2,8 +2,6 @@
 [![Linux/OSX build status](https://img.shields.io/travis/aymericbeaumet/norme/master.svg?style=flat-square&label=linux/osx)](https://travis-ci.org/aymericbeaumet/norme)
 [![Windows build status](https://img.shields.io/appveyor/ci/aymericbeaumet/norme/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/aymericbeaumet/norme)
 [![Code coverage](https://img.shields.io/codeclimate/coverage/github/aymericbeaumet/norme.svg?style=flat-square&label=coverage)](https://codeclimate.com/github/aymericbeaumet/norme)
-[![GPA](https://img.shields.io/codeclimate/github/aymericbeaumet/norme.svg?style=flat-square&label=gpa)](https://codeclimate.com/github/aymericbeaumet/norme)
-[![Dependencies status](https://img.shields.io/david/aymericbeaumet/norme.svg?style=flat-square&label=dependencies)](https://david-dm.org/aymericbeaumet/norme)
 [![Norme](https://img.shields.io/badge/norme-%E2%9C%93-brightgreen.svg)](https://github.com/aymericbeaumet/norme)
 
 # norme
